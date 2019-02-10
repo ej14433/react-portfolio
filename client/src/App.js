@@ -1,4 +1,5 @@
 import React from "react";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import headshot_photo from "./img/professional_photo.png";
 
 import {
@@ -8,7 +9,8 @@ import {
 	Section,
 	Headshot,
 	StyledGithub,
-	StyledLinkedIn
+	StyledLinkedIn,
+	Link
 } from "./style";
 
 const App = () => {
@@ -22,8 +24,12 @@ const App = () => {
 						<Description>
 							Web Developer, based in London.
 						</Description>
-						<StyledGithub />
-						<StyledLinkedIn />
+						<Link href="https://github.com/ej14433">
+							<IoLogoGithub />
+						</Link>
+						<Link href="https://www.linkedin.com/in/elis-jones/">
+							<IoLogoLinkedin />
+						</Link>
 					</div>
 				</Section>
 			</Page>

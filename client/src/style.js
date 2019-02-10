@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 
-export const StyledGithub = styled(IoLogoGithub)`
-	height: 2rem;
-	width: 2rem;
-	color: white;
-`;
-export const StyledLinkedIn = styled(IoLogoLinkedin)`
-	height: 2rem;
-	width: 2rem;
-	color: white;
+export const Link = styled.a`
+	* {
+		height: 2rem;
+		width: 2rem;
+		color: white;
+		:hover {
+			color: #188f61;
+		}
+	}
 `;
 
 export const Page = styled.div`
