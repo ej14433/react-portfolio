@@ -1,16 +1,17 @@
 {
-  "name": "react-portfolio",
-  "version": "1.0.0",
-  "description": "My online portfolio ",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Elis Jones",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "path": "^0.12.7"
-  }
+	"name": "react-portfolio",
+	"version": "1.0.0",
+	"description": "My online portfolio ",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+	},
+	"author": "Elis Jones",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.4",
+		"path": "^0.12.7"
+	}
 }
