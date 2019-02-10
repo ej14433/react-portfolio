@@ -1,28 +1,34 @@
-import React, { Component } from 'react';
+import React from "react";
+import headshot_photo from "./img/professional_photo.png";
 
+import {
+	Page,
+	Name,
+	Description,
+	Section,
+	Headshot,
+	StyledGithub,
+	StyledLinkedIn
+} from "./style";
 
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => {
+	return (
+		<div className="App">
+			<Page>
+				<Section>
+					<Headshot img={headshot_photo} />
+					<div>
+						<Name>Elis Jones.</Name>
+						<Description>
+							Web Developer, based in London.
+						</Description>
+						<StyledGithub />
+						<StyledLinkedIn />
+					</div>
+				</Section>
+			</Page>
+		</div>
+	);
+};
 
 export default App;
