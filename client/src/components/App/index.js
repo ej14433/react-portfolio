@@ -1,17 +1,8 @@
 import React from "react";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
-import headshot_photo from "./img/professional_photo.png";
+import headshot_photo from "../../img/professional_photo.png";
 
-import {
-	Page,
-	Name,
-	Description,
-	Section,
-	Headshot,
-	StyledGithub,
-	StyledLinkedIn,
-	Link
-} from "./style";
+import { Page, Name, Description, Section, Headshot, Link } from "./style";
 
 const App = () => {
 	return (
